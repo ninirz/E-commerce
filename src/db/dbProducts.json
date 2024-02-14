@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "name": "Vestido floral",
-    "price": 39.99,
+    "name": "Original Jeans Levi's",
+    "price": 1599,
     "stock": 10,
     "sizes": ["S", "M", "L", "XL"],
     "colors": ["Rojo", "Azul", "Blanco"],
-    "description": "Vestido floral de manga larga con cinturón ajustable. Perfecto para ocasiones casuales.",
+    "description": "Con su icónico estilo recto con bragueta de botones, un corte a la cadera y ajuste regular en el muslo con pierna recta, estos jeans sin duda siguen siendo un clásico.",
     "category": "mujeres" 
   },
   {
