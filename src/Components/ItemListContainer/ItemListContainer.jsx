@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import productosJson from "../../db/dbProducts.json";
@@ -40,3 +41,16 @@ function ItemListContainer() {
 }
 
 export default ItemListContainer;
+=======
+import React from 'react'
+
+function ItemListContainer(props) {
+  return (
+    <div>
+        <h1>{props.greeting}</h1>
+    </div>
+  )
+}
+
+export default ItemListContainer
+>>>>>>> 592a95975c4054401e95f125686b33d24b70bd89
