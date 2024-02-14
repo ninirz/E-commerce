@@ -1,0 +1,38 @@
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .item-card {
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(20% - 20px); 
+    margin: 10px;
+    box-sizing: border-box; 
+  }
+  
+  
+  .item-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .item-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .item-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .item-card h1 {
+    font-size: 1.25rem;
+    color: #333;
+  }
+  

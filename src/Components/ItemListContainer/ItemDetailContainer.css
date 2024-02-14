@@ -1,0 +1,18 @@
+/* itemDetailContainer.css */
+.product-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .product-image {
+    margin-right: 20px;
+  }
+  
+  .product-description {
+    text-align: left; /* Alinea el texto a la izquierda */
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    margin-top: 10px;
+  }
+  
