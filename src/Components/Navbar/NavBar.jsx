@@ -1,43 +1,58 @@
-import React from 'react';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import { Link, NavLink } from 'react-router-dom';
-import CardWidget from '../CardWidget/CardWidget';
+/* import React from 'react'
+import { Link, NavLink } from "react-router-dom";
+import CartWidget from '../CartWidget/CartWidget'
+import { BotonDropdown } from '../Botones/BotonDropdown';
 import './NavBar.css';
+    
+    export default function Navbar() {
+      return (
+        <header>
+      <Link to="/">
+        <img className='imgNav' src='https://i.pinimg.com/736x/4f/f6/b4/4ff6b454783d2a4570d995195cbe00ed.jpg' />
+      </Link>
+      <nav>
+        <NavLink to="/condition/nuevo" className="botonLibro">Libros Nuevos</NavLink>
+        <NavLink to="/condition/usado" className="botonLibro">Libros Usados</NavLink>
+        <NavLink><BotonDropdown /></NavLink>
+        <NavLink to="/Cart" className="carrito"><CartWidget /></NavLink>
 
-function NavBar() {
+      </nav>
+    </header>
+  );
+} */
+import React from 'react';
+import { Navbar, Container, Nav, NavDropdown, Form, Button } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
+import { FaShoppingCart } from 'react-icons/fa';
+
+
+function NavScrollExample() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link as={NavLink} to="/" exact>Home</Nav.Link>
-            <Nav.Link as={NavLink} to="/categoria/mujeres">Mujeres</Nav.Link>
-            <Nav.Link as={NavLink} to="/categoria/hombres">Hombres</Nav.Link>
-            {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown> */}
+      <Container fluid>
+        <NavLink to="/">Book Store</NavLink>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: '100px' }}
+            navbarScroll
+          >
+            <NavLink to="/category/Romance" className="nav-link">Romance</NavLink>
+            <NavLink to="/category/Biografia" className="nav-link">Biography</NavLink>
+            <NavLink to="/category/Thriller" className="nav-link">Fiction</NavLink>
+            <NavLink to="/category/Fantasia" className="nav-link">Fantasy</NavLink>
+          </Nav>
+          <Nav>
+            {/* Agregar el icono de carrito */}
+            <Nav.Link href="/cart" className="nav-link">
+              <FaShoppingCart />
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-
-        <Navbar.Brand className="d-flex justify-content-center" as={Link} to="/">
-          Sour
-        </Navbar.Brand>
-
-        <Nav className="ml-auto">
-          <CardWidget count={2}/>
-        </Nav>
       </Container>
     </Navbar>
   );
 }
 
-export default NavBar;
+export default NavScrollExample;

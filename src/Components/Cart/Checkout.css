@@ -1,0 +1,44 @@
+/* Checkout.css */
+
+.form-cell {
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.color1 {
+    background-color: #f2f2f2;
+}
+
+.color2 {
+    background-color: #e0e0e0;
+}
+
+.color3 {
+    background-color: #d2d2d2;
+}
+
+.buy-button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
+}
+
+.order-id {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* You can adjust the styles further according to your design preferences */
