@@ -1,0 +1,54 @@
+.detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.imgDetail {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.cardDetail {
+    background-color: #f8f9fa;
+    border: none;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    font-size: 24px;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+.center {
+    text-align: center;
+}
+
+.link-to-cart {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.link-to-cart:hover {
+    text-decoration: underline;
+}
+
+/* Iconos (por ejemplo, utilizando Font Awesome) */
+.card-text i {
+    margin-right: 5px;
+}
+
